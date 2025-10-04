@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pambansang ID eVerify</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      color: #0f0f0f;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    /* Dropdown Nav */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background: #1e40af;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      min-width: 220px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #0f0f0f;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+    }
+    .dropdown-content a:hover {
+      background-color: #f3f4f6;
+      color: #1e40af;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Main */
+    main {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      width: 100%;
+    }
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #121213;
+    }
+    .info-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .photo {
+      flex: 0 0 140px;
+      text-align: center;
+    }
+    .photo img {
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .photo p {
+      font-size: 14px;
+      margin-top: 8px;
+      color: #0f0f0f;
+    }
+    .details {
+      flex: 1;
+      min-width: 250px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 20px;
+      color: #0f0f0f;
+    }
+    .details p {
+      margin: 0;
+      font-size: 15px;
+    }
+    .details strong {
+      color: #1d1d1f;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .details {
+        grid-template-columns: 1fr;
+      }
+      .info-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="snipping.png" alt="Pambansang ID eVerify Logo">
+    <div class="dropdown">
+      <button class="dropbtn">☰ Menu</button>
+      <div class="dropdown-content">
+        <a href="verification.html">Bersipikasyon ng Customer</a>
+        <a href="#">Profile ng Organisasyon</a>
+        <a href="#">Sistema ng Aplikasyon</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="card">
+      <h2>Impormasyon ng Customer</h2>
+      <div class="info-container">
+        <!-- Photo -->
+        <div class="photo">
+          <img src="shilopic.png" alt="Larawan ng Customer" height="100px" width="100px">
+          <p>Larawan</p>
+        </div>
+
+        <!-- Details -->
+        <div class="details">
+          <p><strong>Digital ID:</strong> VS2J19</p>
+          <p><strong>Pangalan:</strong> Shilo</p>
+          <p><strong>Gitnang Apelyido:</strong> Miguel</p>
+          <p><strong>Apelyido:</strong> Bernardo</p>
+          <p><strong>Kasarian:</strong> Male</p>
+          <p><strong>Petsa ng Kapanganakan:</strong> May 23, 2004</p>
+          <p><strong>Tirahan:</strong> Balibago, Diamond Subd, Angeles City</p>
+          <p><strong>Katayuang Sibil:</strong> Single</p>
+          <p><strong>Numero ng Telepono:</strong> 639287240339</p>
+          <p><strong>Uri ng Dugo:</strong> O+</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

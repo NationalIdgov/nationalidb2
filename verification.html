@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pambansang ID Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      color: #0f0f0f;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+    }
+
+    /* Dropdown Nav */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background: #1e40af;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      min-width: 220px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #0f0f0f;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+    }
+    .dropdown-content a:hover {
+      background-color: #f3f4f6;
+      color: #1e40af;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Main Card */
+    main {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 650px;
+      width: 100%;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .card h2 {
+      margin: 15px 0 8px;
+      font-size: 20px;
+      color: #121213;
+    }
+    .card p {
+      font-size: 14px;
+      margin: 0;
+      color: #0f0f0f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="snipping.png" alt="Pambansang ID eVerify Logo">
+    <div class="dropdown">
+      <button class="dropbtn">☰ Menu</button>
+      <div class="dropdown-content">
+        <a href="index.html">Bersipikasyon ng Customer</a>
+        <a href="#">Profile ng Organisasyon</a>
+        <a href="#">Sistema ng Aplikasyon</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="card">
+      <img src="Shilo.jfif">
+      <h2>Pambansang ID</h2>
+      <p>Digital Display ng iyong Philippine Identification Card</p>
+    </div>
+  </main>
+
+</body>
+</html>
